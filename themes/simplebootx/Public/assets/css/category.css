@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px){
+    .market-block-four .lower-content {
+        background-color: #5dca0f;
+        border-color: #5dca0f;
+    }
+    .market-block-four .inner-box .lower-content h3 a{
+        color: white;
+    }
+    .lower-content h3 a{
+        color:#ffffff;
+    }
+    .market-block-four .inner-box .lower-content  .text,
+   .lower-content .link-box{
+        opacity:1;
+        visibility:visible;
+        color: white;
+    }
+    .market-block-four .inner-box .lower-content .link-box{
+        opacity: 1;
+        visibility:visible;
+        color: white;
+    }
+    .market-block-four .inner-box .lower-content h3:after{
+        background: rgba(255,255,255,0.3);
+    }
+}

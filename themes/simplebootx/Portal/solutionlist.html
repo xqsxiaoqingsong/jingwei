@@ -1,0 +1,591 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> JINGWEI TEXTILE MACHINERY</title>
+<!-- Stylesheets -->
+<link href="__TMPL__Public/assets/css/bootstrap.css" rel="stylesheet">
+<link href="__TMPL__Public/assets/css/style.css" rel="stylesheet">
+<link href="__TMPL__Public/assets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="__TMPL__Public/assets/css/category.css">
+<!--<link href="css/color.css" rel="stylesheet">-->
+
+<link rel="shortcut icon" href="__TMPL__Public/assets/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="__TMPL__Public/assets/images/favicon.png" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="__TMPL__Public/assets/js/respond.js"></script><![endif]-->
+</head>
+<style>
+    .cyfulist-div td { padding:10px 0px; font-size:14px;}
+    .cyfulist-div li { display:inline-block;line-height:18px; margin:0px 30px 0px 0px; cursor:pointer;}
+    .cyfulist-div li span { width:10px; height:10px; padding:3px; border:1px solid #ccc; display:inline-block; float:left;box-sizing: content-box;-webkit-box-sizing:content-box; margin:0px 10px 0px 0px;}
+    .cyfulist-div li span i { width:10px; height:10px; background:#fff; display:inline-block; float:left;}
+    .cyfulist-div li span i.ckon { background:#5dca0f;}
+    .cyfulist-div
+    .subCategory{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        /*visibility: hidden;*/
+        /*display: none;*/
+    }
+    .cyfulist-div .item>div,
+    .cyfulist-div .item>span,
+    .cyfulist-div .subList>div,
+    .cyfulist-div .subList>span
+    {
+        vertical-align: top;
+        display: inline-block;
+    }
+    .cyfulist-div .item>span,
+    .cyfulist-div .subList>span
+    {
+        width: 90px;
+        text-align: center;
+        line-height: 22px;
+        font-size: 15px;
+    }
+    .cyfulist-div .item>div,
+    .cyfulist-div .subList>div{
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        min-width: 0;
+    }
+    .cyfulist-div .item,.cyfulist-div .subList{
+        margin: 10px 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+    }
+    .subCategory{
+        display: none;
+    }
+    .subCategory.active{
+        display: block;
+    }
+    .subCategory.active{
+        /*visibility: visible;*/
+        /*display: inline-block;*/
+    }
+
+</style>
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+
+    <tc_include file="Public:head" />
+
+
+    
+    <!--Page Title-->
+    <section class="page-title page-banner" style="background-image:url(__ROOT__/data/upload/{$banner})">
+    	<div class="auto-container">
+        	<!--<ul class="page-breadcrumb">-->
+            	<!--<li><a href="index.html">Home</a></li>-->
+                <!--<li>Market Sectors</li>-->
+            <!--</ul>-->
+        	<!--<h1>Market Sectors</h1>-->
+        </div>
+    </section>
+    <!--End Page Title-->
+    <div class="cyfulist-div auto-container">
+            <php>
+
+            </php>
+            <div class="item">
+                <span style="font-weight: bold">Solutions：</span>
+                <div>
+                    <ul class="type1">
+                        <foreach name="category" item="v">
+                            <if condition="$cid eq $key">
+                                <li><span><i  class="ckon" rel="{$key}"></i></span>{$v}</li>
+                                <else/>
+                                <li><span><i rel="{$key}"></i></span>{$v}</li>
+                            </if>
+
+                        </foreach>
+                       <!-- <li><span><i  class=""></i></span>Weaving  </li>
+                        <li><span><i  class=""></i></span>Twisting </li>
+                        <li><span><i  class=""></i></span>Dyeing&Finishing </li>
+                        <li><span><i  class=""></i></span>Spare Parts</li>
+                        <li><span><i  class=""></i></span>Chemical fibers</li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="subCategory active">
+                <div class="subList" >
+                    <span class="type_list " style="font-weight: bold">Category：</span>
+                    <div>
+                        <ul class="type2 ">
+                            {$erji}
+                            <!--<li><span><i ></i></span>000</li>
+                            <li><span><i ></i></span>001</li>
+                            <li><span><i ></i></span>002</li>
+                            <li><span><i ></i></span>003</li>
+                            <li><span><i ></i></span>004</li>
+                            <li><span><i ></i></span>005</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+       <!-- <div class="subCategory ">
+            <div class="subList" >
+                <span class="type_list " style="">类别：</span>
+                <div>
+                    <ul class="type2 ">
+                        <li><span><i ></i></span>010</li>
+                        <li><span><i ></i></span>011</li>
+                        <li><span><i ></i></span>012</li>
+                        <li><span><i ></i></span>013</li>
+                        <li><span><i ></i></span>014</li>
+                        <li><span><i ></i></span>015</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="subCategory ">
+            <div class="subList" >
+                <span class="type_list " style="">类别：</span>
+                <div>
+                    <ul class="type2 ">
+                        <li><span><i ></i></span>020</li>
+                        <li><span><i ></i></span>021</li>
+                        <li><span><i ></i></span>022</li>
+                        <li><span><i ></i></span>023</li>
+                        <li><span><i ></i></span>024</li>
+                        <li><span><i ></i></span>025</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="subCategory ">
+            <div class="subList" >
+                <span class="type_list " style="">类别：</span>
+                <div>
+                    <ul class="type2 ">
+                        <li><span><i ></i></span>030</li>
+                        <li><span><i ></i></span>031</li>
+                        <li><span><i ></i></span>032</li>
+                        <li><span><i ></i></span>033</li>
+                        <li><span><i ></i></span>034</li>
+                        <li><span><i ></i></span>035</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="subCategory ">
+            <div class="subList" >
+                <span class="type_list " style="">类别：</span>
+                <div>
+                    <ul class="type2 ">
+                        <li><span><i ></i></span>040</li>
+                        <li><span><i ></i></span>041</li>
+                        <li><span><i ></i></span>042</li>
+                        <li><span><i ></i></span>043</li>
+                        <li><span><i ></i></span>044</li>
+                        <li><span><i ></i></span>045</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="subCategory ">
+            <div class="subList" >
+                <span class="type_list " style="">类别：</span>
+                <div>
+                    <ul class="type2 ">
+                        <li><span><i ></i></span>050</li>
+                        <li><span><i ></i></span>051</li>
+                        <li><span><i ></i></span>052</li>
+                        <li><span><i ></i></span>053</li>
+                        <li><span><i ></i></span>054</li>
+                        <li><span><i ></i></span>055</li>
+                    </ul>
+                </div>
+            </div>
+        </div>-->
+    </div>
+    <!--Market Page Section-->
+    <section class="market-page-section">
+    	<div class="auto-container">
+        	
+            <div class="row clearfix">
+            	<foreach name="list" item="v" empty="暂无该产品">
+                <!--Market Block-->
+                <div class="market-block-four col-md-3 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<a href="{:U('solutionlist/detail',array('id'=>$v['id']))}"><img src="__ROOT__/data/upload/{$v.img}" alt="" /></a>
+                        </div>
+                        <div class="lower-content">
+
+                        	<h3><a href="{:U('solutionlist/detail',array('id'=>$v['id']))}">{$v.post_title}</a></h3>
+                            <div class="text">{$v.post_excerpt|strip_tags|mb_substr=0,200,'utf-8'}...</div>
+                            <a class="link-box" href="{:U('solutionlist/detail',array('id'=>$v['id']))}">Go Through <span class="icon flaticon-arrow-pointing-to-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+                </foreach>
+                <empty name="list"> not find the solution</empty>
+                
+                <!--&lt;!&ndash;Market Block&ndash;&gt;-->
+                <!--<div class="market-block-four col-md-3 col-sm-6 col-xs-12">-->
+                	<!--<div class="inner-box">-->
+                    	<!--<div class="image">-->
+                        	<!--<a href="investor.html"><img src="__TMPL__Public/assets/images/resource/market-9.jpg" alt="" /></a>-->
+                        <!--</div>-->
+                        <!--<div class="lower-content">-->
+
+                        	<!--<h3><a href="investor.html">Industrial Construction</a></h3>-->
+                            <!--<div class="text">Denouncing pleasure ut pain give you a complete...</div>-->
+                            <!--<a class="link-box" href="investor.html">Go Through <span class="icon flaticon-arrow-pointing-to-right"></span></a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!---->
+                <!--&lt;!&ndash;Market Block&ndash;&gt;-->
+                <!--<div class="market-block-four col-md-3 col-sm-6 col-xs-12">-->
+                	<!--<div class="inner-box">-->
+                    	<!--<div class="image">-->
+                        	<!--<a href="investor.html"><img src="__TMPL__Public/assets/images/resource/market-10.jpg" alt="" /></a>-->
+                        <!--</div>-->
+                        <!--<div class="lower-content">-->
+
+                        	<!--<h3><a href="investor.html">Energy and <br> Power</a></h3>-->
+                            <!--<div class="text">Denouncing pleasure ut pain give you a complete...</div>-->
+                            <!--<a class="link-box" href="investor.html">Go Through <span class="icon flaticon-arrow-pointing-to-right"></span></a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!---->
+                <!--&lt;!&ndash;Market Block&ndash;&gt;-->
+                <!--<div class="market-block-four col-md-3 col-sm-6 col-xs-12">-->
+                	<!--<div class="inner-box">-->
+                    	<!--<div class="image">-->
+                        	<!--<a href="investor.html"><img src="__TMPL__Public/assets/images/resource/market-11.jpg" alt="" /></a>-->
+                        <!--</div>-->
+                        <!--<div class="lower-content">-->
+                        	<!--<h3><a href="investor.html">Material <br> Engineering</a></h3>-->
+                            <!--<div class="text">Denouncing pleasure ut pain give you a complete...</div>-->
+                            <!--<a class="link-box" href="investor.html">Go Through <span class="icon flaticon-arrow-pointing-to-right"></span></a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!---->
+                <!--&lt;!&ndash;Market Block&ndash;&gt;-->
+                <!--<div class="market-block-four col-md-3 col-sm-6 col-xs-12">-->
+                	<!--<div class="inner-box">-->
+                    	<!--<div class="image">-->
+                        	<!--<a href="investor.html"><img src="__TMPL__Public/assets/images/resource/market-12.jpg" alt="" /></a>-->
+                        <!--</div>-->
+                        <!--<div class="lower-content">-->
+
+                        	<!--<h3><a href="investor.html">Oil & Gas <br> Conservation</a></h3>-->
+                            <!--<div class="text">Denouncing pleasure ut pain give you a complete...</div>-->
+                            <!--<a class="link-box" href="investor.html">Go Through <span class="icon flaticon-arrow-pointing-to-right"></span></a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!---->
+                <!--&lt;!&ndash;Market Block&ndash;&gt;-->
+                <!--<div class="market-block-four col-md-3 col-sm-6 col-xs-12">-->
+                	<!--<div class="inner-box">-->
+                    	<!--<div class="image">-->
+                        	<!--<a href="investor.html"><img src="__TMPL__Public/assets/images/resource/market-13.jpg" alt="" /></a>-->
+                        <!--</div>-->
+                        <!--<div class="lower-content">-->
+
+                        	<!--<h3><a href="investor.html">Marine <br> Transportation</a></h3>-->
+                            <!--<div class="text">Denouncing pleasure ut pain give you a complete...</div>-->
+                            <!--<a class="link-box" href="investor.html">Go Through <span class="icon flaticon-arrow-pointing-to-right"></span></a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!---->
+                <!--&lt;!&ndash;Market Block&ndash;&gt;-->
+                <!--<div class="market-block-four col-md-3 col-sm-6 col-xs-12">-->
+                	<!--<div class="inner-box">-->
+                    	<!--<div class="image">-->
+                        	<!--<a href="investor.html"><img src="__TMPL__Public/assets/images/resource/market-14.jpg" alt="" /></a>-->
+                        <!--</div>-->
+                        <!--<div class="lower-content">-->
+                        	<!--<h3><a href="investor.html">Agriculture <br> Processing</a></h3>-->
+                            <!--<div class="text">Denouncing pleasure ut pain give you a complete...</div>-->
+                            <!--<a class="link-box" href="investor.html">Go Through <span class="icon flaticon-arrow-pointing-to-right"></span></a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!---->
+                <!--&lt;!&ndash;Market Block&ndash;&gt;-->
+                <!--<div class="market-block-four col-md-3 col-sm-6 col-xs-12">-->
+                	<!--<div class="inner-box">-->
+                    	<!--<div class="image">-->
+                        	<!--<a href="investor.html"><img src="__TMPL__Public/assets/images/resource/market-15.jpg" alt="" /></a>-->
+                        <!--</div>-->
+                        <!--<div class="lower-content">-->
+                        	<!--<h3><a href="investor.html">Bridge <br> Construction</a></h3>-->
+                            <!--<div class="text">Denouncing pleasure ut pain give you a complete...</div>-->
+                            <!--<a class="link-box" href="investor.html">Go Through <span class="icon flaticon-arrow-pointing-to-right"></span></a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                
+            </div>
+            <ul class="styled-pagination text-center">
+               <!-- <li class="prev"><a href="#"><span class="fa fa-angle-left"></span></a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li class="next"><a href="#"><span class="fa fa-angle-right"></span></a></li>-->
+                {$show}
+            </ul>
+        </div>
+    </section>
+    <!--End Market Section Four-->
+    
+    <!--Services Section-->
+    <section class="services-section-three">
+    	<div class="auto-container">
+        	<!--Sec Title-->
+            <div class="sec-title centered">
+            	<h2>Other Solutions</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="row clearfix">
+                <!--Services Block-->
+                <div class="services-block-three col-md-2 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<h3><a href="#">Weaving  </a></h3>
+                        <div class="text">Great explorer of the truth, master builder human happiness work one pleasure itself not know...</div>
+                        <a class="read-more" href="#">Read More <span class="icon flaticon-right-arrow-1"></span></a>
+                    </div>
+                </div>
+                
+                <!--Services Block-->
+                <div class="services-block-three col-md-2 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<h3><a href="#">Twisting</a></h3>
+                        <div class="text">Great explorer of the truth, master builder human happiness work one pleasure itself not know...</div>
+                        <a class="read-more" href="#">Read More <span class="icon flaticon-right-arrow-1"></span></a>
+                    </div>
+                </div>
+                
+                <!--Services Block-->
+                <div class="services-block-three col-md-2 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<h3><a href="#">Dyeing&Finishing </a></h3>
+                        <div class="text">Great explorer of the truth, master builder human happiness work one pleasure itself not know...</div>
+                        <a class="read-more" href="#">Read More <span class="icon flaticon-right-arrow-1"></span></a>
+                    </div>
+                </div>
+                
+                <!--Services Block-->
+                <div class="services-block-three col-md-2 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<h3><a href="#">Spare Parts</a></h3>
+                        <div class="text">Great explorer of the truth, master builder human happiness work one pleasure itself not know...</div>
+                        <a class="read-more" href="#">Read More <span class="icon flaticon-right-arrow-1"></span></a>
+                    </div>
+                </div>
+                <div class="services-block-three col-md-2 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <h3><a href="#">Chemical fibers</a></h3>
+                        <div class="text">Great explorer of the truth, master builder human happiness work one pleasure itself not know...</div>
+                        <a class="read-more" href="#">Read More <span class="icon flaticon-right-arrow-1"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Services Section-->
+    <!--Quote Form-->
+    <div class="modal fade" id="schedule-box" tabindex="-1" role="dialog">
+      <div class="modal-dialog popup-container container" role="document">
+        <div class="modal-content">
+            <div class="appoinment_form_wrapper clear_fix">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <div class="get-quote-form" style="background-image:url(__TMPL__Public/assets/images/background/13.jpg)">
+                	<div class="inner-box">
+                    	<!--Sec Title-->
+                        <div class="sec-title">
+                        	<div class="clearfix">
+                            	<div class="pull-left">
+                                	<h2>Get a Quote</h2>
+                                    <div class="separator centered"></div>
+                                </div>
+                                <div class="pull-left">
+                                	<div class="text">Get a free quote for your industrial or engineering business solutions, We are here 24/7.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Quote Form / Style Two-->
+                        <div class="quote-form style-two">
+                            <!--Shipping Form-->
+                            <form method="post" action="contact.html">
+                                <div class="row clearfix">
+                                	<div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="text" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="text" placeholder="Company Name" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="text" placeholder="Phone" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <select class="custom-select-box">
+                                            <option>Select Needed Service</option>
+                                            <option>Services One</option>
+                                            <option>Services Two</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <textarea placeholder="Your Message..."></textarea>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form">Send Now <span class="icon flaticon-arrow-pointing-to-right"></span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> 
+        </div> 
+      </div> 
+      <a href="index.html" class="backhome">Back to Home <span class="icon flaticon-arrow-pointing-to-right"></span></a>
+    </div>
+    <tc_include file="Public:footer" />
+    <!-- End of Quote box -->
+    <!--Main Footer-->
+    <!--<footer class="main-footer">
+        <div class="auto-container">
+            &lt;!&ndash;Widgets Section&ndash;&gt;
+            <div class="widgets-section">
+                <div class="row clearfix">
+
+                    &lt;!&ndash;Column&ndash;&gt;
+                    <div class="column col-md-5 col-sm-6 col-xs-12">
+                        <div class="footer-widget logo-widget">
+                            <div class="logo">
+                                <a href="index.html"><img src="__TMPL__Public/assets/images/logo.png" alt="" /></a>
+                            </div>
+                            <div class="widget-content">
+                                <div class="text">7F, C Block,  First Shanghai Center, No.39 Liangmaqiao Rd, Chaoyang District, Beijing, China</div>
+                                <ul class="list">
+                                    <li>Tel: +8610-84534078/79/80/81  </li>
+                                    <li> Fax: +8610-84534135</li>
+                                </ul>
+                                <div class="timing">
+                                    <span>Visit Our Office:</span>Monday - Satday: 9.00am to 5.00pm
+                                </div>
+                                <ul class="social-icon-one">
+                                    <li><a href="https://www.facebook.com/CHTC.Jennifer/?modal=admin_todo_tour"><span class="fa fa-facebook"></span></a></li>
+                                    <li><a href="https://twitter.com/CHTC_textile"><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href="https://www.linkedin.com/company/13706394/admin/overview/"><span class="fa fa-linkedin"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    &lt;!&ndash;Column&ndash;&gt;
+                    <div class="column col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget links-widget">
+                            <div class="footer-title">
+                                <h2>Useful Links</h2>
+                            </div>
+                            <div class="row clearfix">
+                                <div class="column col-md-6 col-sm-6 col-xs-12">
+                                    <ul class="links">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="news.html">News</a></li>
+                                        <li><a href="solutionlist.html">Solution</a></li>
+                                        <li><a href="investor.html">Investor Relationship</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column col-md-6 col-sm-6 col-xs-12">
+                                    <ul class="links">
+                                        <li><a href="http://www.sinomach.com.cn/en/">SINOMACH </a></li>
+                                        <li><a href="http://www.chtgc.com">CHTC      </a></li>
+                                        <li><a href="http://www.ctmgc.com.cn/">CTMGC    </a></li>
+                                        <li><a href="/">Subsidiary</a></li>
+                                        &lt;!&ndash;<li><a href="http://fjz.ttfj.com/en/index.html">Online Exhibition</a></li>&ndash;&gt;
+                                        &lt;!&ndash;<li><a href="#">App</a></li>&ndash;&gt;
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    &lt;!&ndash;Column&ndash;&gt;
+                    <div class="column col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-widget material-widget">
+                            <div class="footer-title">
+                                <h2>Download Center</h2>
+                            </div>
+                            <ul class="list-style-two">
+                                &lt;!&ndash;<li><span class="icon flaticon-doc"></span><a href="#">Company Investors</a>Year 2017-18</li>&ndash;&gt;
+                                &lt;!&ndash;<li><span class="icon flaticon-doc"></span><a href="#">Industrial Training</a>For Constructors</li>&ndash;&gt;
+                                &lt;!&ndash;<li><span class="icon flaticon-pdf"></span><a href="#">Company Growth</a>In Last 3 Years</li>&ndash;&gt;
+                                <li><a href="#">Product</a></li>
+                                <li><a href="#">Company Report</a></li>
+                                <li><a href="#">Annual Report</a></li>
+                                <li><a href="#">CSR Report</a></li>
+                                <li><a href="#">More</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>-->
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
+
+<script src="__TMPL__Public/assets/js/jquery.js"></script>
+<script src="__TMPL__Public/assets/js/bootstrap.min.js"></script>
+<script src="__TMPL__Public/assets/js/jquery.fancybox.js"></script>
+<script src="__TMPL__Public/assets/js/owl.js"></script>
+<script src="__TMPL__Public/assets/js/wow.js"></script>
+<script src="__TMPL__Public/assets/js/jquery-ui.js"></script>
+<script src="__TMPL__Public/assets/js/knob.js"></script>
+<script src="__TMPL__Public/assets/js/appear.js"></script>
+<script src="__TMPL__Public/assets/js/script.js"></script>
+<script>
+    $(".type1").find("li").on("click",function(){
+
+
+        if(!$(this).find("i").attr("class")){
+
+            window.location.href="{:U('Solutionlist/index')}"+"&cid="+$(this).find("i").attr("rel");
+        }
+
+
+    })
+    $(".type2").find("li").on("click",function(){
+        if(!$(this).find("i").attr("class")){
+
+            var url="{:U('Solutionlist/index')}";
+            if($(".type1 .ckon").length>0){
+                url+="&cid="+$(".type1 .ckon").attr('rel');
+            }
+            url+="&c="+$(this).find('i').attr('rel');
+            window.location.href=url;
+        }
+
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> JINGWEI TEXTILE MACHINERY</title>
+    <!-- Stylesheets -->
+    <link href="__TMPL__Public/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="__TMPL__Public/assets/css/style.css" rel="stylesheet">
+    <link href="__TMPL__Public/assets/css/responsive.css" rel="stylesheet">
+    <!--<link href="css/color.css" rel="stylesheet">-->
+
+    <link rel="shortcut icon" href="__TMPL__Public/assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="__TMPL__Public/assets/images/favicon.png" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="__TMPL__Public/assets/js/respond.js"></script><![endif]-->
+    <link href="__TMPL__Public/assets/share.js-master/dist/css/share.min.css" rel="stylesheet">
+    <script src="__TMPL__Public/assets/share.js-master/dist/js/social-share.min.js"></script>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+    <!--End Main Header -->
+
+    <tc_include file="Public:head" />
+
+
+
+
+    <!--Page Title-->
+    <section class="page-title page-banner" style="background-image:url(__TMPL__Public/assets/images/banner/aboutlist.jpg)">
+        <div class="auto-container">
+            <!--<ul class="page-breadcrumb">-->
+            <!--<li><a href="index.html">Home</a></li>-->
+            <!--<li>Single Project</li>-->
+            <!--</ul>-->
+            <!--<h1>Single Project</h1>-->
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!--Project Single Section-->
+    <section class="project-single-section">
+        <div class="auto-container">
+
+            <div class="inner-box">
+                <div class="image">
+
+
+                            <img src="__ROOT__/data/upload/{$rows['smeta']['photo']}" alt="{$rows['smeta']['alt']}" />
+
+
+
+                </div>
+                <h2>{$rows.name}</h2>
+                <div class="row clearfix">
+                    <!--Content Column-->
+                    <div class="content-column col-md-9 col-sm-12 col-xs-12">
+                        <div class="inner-column">
+                            <div class="text">
+                                {$rows.content}
+
+                            </div>
+
+
+                            <ul class="social-icon-one">
+                                <div class="social-share" data-initialized="true">
+                                    <a href="#" class="social-share-icon icon-facebook"></a>
+                                    <a href="#" class="social-share-icon icon-twitter"></a>
+                                    <a href="#" class="social-share-icon icon-linkedin"></a>
+                                </div>
+                                <!--<li><a href="https://www.facebook.com/CHTC.Jennifer/?modal=admin_todo_tour"><span class="fa fa-facebook"></span></a></li>
+                                <li><a href="https://twitter.com/CHTC_textile"><span class="fa fa-twitter"></span></a></li>
+                                &lt;!&ndash;<li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>&ndash;&gt;
+                                <li><a href="#"><span class="fa fa-skype"></span></a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Info Column-->
+                    <div class="info-column col-md-3 col-sm-12 col-xs-12">
+                        <div class="inner-column">
+                            <ul>
+                                <li><strong>Category :</strong>Project Reference</li>
+                                <li><strong>Client :</strong>Textile Industrial</li>
+                                <li><strong>Date :</strong>1st March,2018</li>
+                                <!--<li><strong>Link :</strong>{$rows.post_source}</li>-->
+                                <li><strong>Rating :</strong><span class="star fa fa-star"></span><span class="star fa fa-star"></span><span class="star fa fa-star"></span><span class="star fa fa-star"></span><span class="star fa fa-star-half-o"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Options-->
+            <div class="post-options">
+                <div class="inner-box">
+                    <div class="clearfix">
+                        <ul>
+                            <notempty name="prev['id']">
+                                <li class="prev"><a href="{:U('news/news_detail',array('id'=>$prev['id']))}"><span class="icon fa fa-angle-left"></span> Prev</a></li>
+
+                            </notempty>
+                            <notempty name="next['id']">
+                                <li class="next"><a href="{:U('news/news_detail',array('id'=>$next['id']))}">Next &nbsp; <span class="icon fa fa-angle-right"></span></a></li>
+                            </notempty>
+                            <li class="grid"><a href="javascript:;"><span class="icon fa fa-th"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--End Project Modern Section-->
+
+    <!--Quote Form-->
+    <div class="modal fade" id="schedule-box" tabindex="-1" role="dialog">
+        <div class="modal-dialog popup-container container" role="document">
+            <div class="modal-content">
+                <div class="appoinment_form_wrapper clear_fix">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    <div class="get-quote-form" style="background-image:url(images/background/13.jpg)">
+                        <div class="inner-box">
+                            <!--Sec Title-->
+                            <div class="sec-title">
+                                <div class="clearfix">
+                                    <div class="pull-left">
+                                        <h2>Get a Quote</h2>
+                                        <div class="separator centered"></div>
+                                    </div>
+                                    <div class="pull-left">
+                                        <div class="text">Get a free quote for your industrial or engineering business solutions, We are here 24/7.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quote Form / Style Two-->
+                            <div class="quote-form style-two">
+                                <!--Shipping Form-->
+                                <form method="post" action="contact.html">
+                                    <div class="row clearfix">
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" name="text" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" name="text" placeholder="Company Name" required>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" name="text" placeholder="Phone" required>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <select class="custom-select-box">
+                                                <option>Select Needed Service</option>
+                                                <option>Services One</option>
+                                                <option>Services Two</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                            <textarea placeholder="Your Message..."></textarea>
+                                        </div>
+                                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                            <button class="theme-btn btn-style-one" type="submit" name="submit-form">Send Now <span class="icon flaticon-arrow-pointing-to-right"></span></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="backhome">Back to Home <span class="icon flaticon-arrow-pointing-to-right"></span></a>
+    </div>
+    <tc_include file="Public:footer" />
+    <!-- End of Quote box -->
+
+
+
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
+
+<script src="__TMPL__Public/assets/js/jquery.js"></script>
+<script src="__TMPL__Public/assets/js/bootstrap.min.js"></script>
+<script src="__TMPL__Public/assets/js/jquery.fancybox.js"></script>
+<script src="__TMPL__Public/assets/js/jquery-ui.js"></script>
+<script src="__TMPL__Public/assets/js/owl.js"></script>
+<script src="__TMPL__Public/assets/js/wow.js"></script>
+<script src="__TMPL__Public/assets/js/appear.js"></script>
+<script src="__TMPL__Public/assets/js/script.js"></script>
+</body>
+</html>

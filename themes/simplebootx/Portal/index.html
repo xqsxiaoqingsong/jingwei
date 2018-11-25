@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> JINGWEI TEXTILE MACHINERY</title>
+<!-- Stylesheets -->
+<link href="__TMPL__Public/assets/css/bootstrap.css" rel="stylesheet">
+
+<link href="__TMPL__Public/assets/plugins/revolution/css/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
+<link href="__TMPL__Public/assets/plugins/revolution/css/layers.css" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
+<link href="__TMPL__Public/assets/plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
+<link href="__TMPL__Public/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="__TMPL__Public/assets/css/banner.css">
+<link href="__TMPL__Public/assets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="__TMPL__Public/assets/css/add.css">
+<!--<link href="css/color.css" rel="stylesheet">-->
+
+<link rel="shortcut icon" href="__TMPL__Public/assets/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="__TMPL__Public/assets/images/favicon.png" type="image/x-icon">
+<!-- Responsive -->
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="__TMPL__Public/assets/js/respond.js"></script><![endif]-->
+</head>
+<style>
+
+
+</style>
+<body>
+
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <tc_include file="Public:head" />
+    <!-- Main Header-->
+
+
+
+    <!--Main Slider-->
+    <div class="main-slider slider">
+            <ul class="slides">
+                <foreach name="banner" item="v">
+                    <foreach name="v['image']" item="v1">
+                        <li class="slide">
+                            <div class="box" style="background-image: url('__ROOT__/data/upload/{$v1}')"></div>
+                        </li>
+                    </foreach>
+                </foreach>
+
+
+            </ul>
+        </div>
+    </div>
+    <!--End Main Slider-->
+    <!--End Main Slider-->
+
+    <!--Market Section Two-->
+    <section class="market-section-two" style="background:#f4f4f4 ">
+        <div class="auto-container">
+            <div class="title-box">
+                <h2>PRODUCTS SOLUTIONS</h2>
+                <div class="text">Over 67 years experience & knowledge In textile industry, dedicated to provide the best complete product solutions.</div>
+            </div>
+
+            <div class="clearfix">
+                <!--Project Block-->
+                <div class="project-block col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="__TMPL__Public/assets/images/index/1Combing Spinning.jpg" alt="">
+                            <div class="overlay-box">
+                                <div class="content">
+                                    <h3><a href="{:U('Index/detail')}">Cotton Spinning Process</a></h3>
+                                    <div class="text">Combing/Compact Spinning Process <span class="icon flaticon-right-arrow-1"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Project Block-->
+                <div class="project-block col-md-6 col-sm-6 col-xs-12 project-block2">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="__TMPL__Public/assets/images/index/2Carded Spinning.jpg" alt="">
+                            <div class="overlay-box">
+                                <div class="content">
+                                    <h3><a href="{:U('Index/detail')}">Cotton Spinning Process</a></h3>
+                                    <div class="text">Carded Yarn Spinning Process <span class="icon flaticon-right-arrow-1"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Project Block-->
+                <div class="project-block col-md-6 col-sm-6 col-xs-12 project-block3">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="__TMPL__Public/assets/images/index/3Rotor Spinning.JPG" alt="">
+                            <div class="overlay-box">
+                                <div class="content">
+                                    <h3><a href="{:U('Index/detail')}">Cotton Spinning Process</a></h3>
+                                    <div class="text">Rotor Spinning Process<span class="icon flaticon-right-arrow-1"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <section class="services-section services-other" >
+                <div class="auto-container">
+                    <div class="inner-container">
+                        <div class="row clearfix">
+                            <!--Services Block-->
+                            <div class="services-block col-md-3 col-sm-6 col-xs-6">
+                                <div class="inner-box">
+                                    <a href="{:U('Solutionlist/Index',array('cid'=>3))}">
+                                        <div class="image">
+                                            <img src="__TMPL__Public/assets/images/index/4 Weaving.jpg" alt="">
+                                        </div>
+                                        <div class="lower-content">
+                                            <h3><span>Weaving</span></h3>
+                                            <!--<div class="text">Rotor Spinning Process<span class="icon flaticon-right-arrow-1"></span></div>-->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--Services Block-->
+                            <div class="services-block col-md-3 col-sm-6 col-xs-6">
+                                <div class="inner-box">
+                                    <a href="{:U('Solutionlist/Index',array('cid'=>3))}">
+                                        <div class="image">
+                                            <img src="__TMPL__Public/assets/images/index/5Twisting.jpg" alt="">
+                                        </div>
+                                        <div class="lower-content">
+
+                                            <h3><span>Twisting</span></h3>
+                                            <!--<div class="text">Rotor Spinning Process<span class="icon flaticon-right-arrow-1"></span></div>-->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--Services Block-->
+                            <div class="services-block col-md-3 col-sm-6 col-xs-6">
+                                <div class="inner-box">
+                                    <a href="{:U('Solutionlist/Index',array('cid'=>3))}">
+                                        <div class="image">
+                                            <img src="__TMPL__Public/assets/images/index/6Dying.png" alt="">
+                                        </div>
+                                        <div class="lower-content">
+                                            <h3><span>Dying & Finishing</span></h3>
+                                            <!--<div class="text">Rotor Spinning Process<span class="icon flaticon-right-arrow-1"></span></div>-->
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                            <!--Services Block-->
+                            <div class="services-block col-md-3 col-sm-6 col-xs-6">
+                                <div class="inner-box">
+                                    <a href="{:U('Solutionlist/Index',array('cid'=>3))}">
+                                        <div class="image">
+                                            <img src="__TMPL__Public/assets/images/index/7SpareParts.jpg" alt="">
+                                        </div>
+                                        <div class="lower-content">
+
+                                            <h3><span>Spare Parts</span></h3>
+                                            <!--<div class="text">Rotor Spinning Process<span class="icon flaticon-right-arrow-1"></span></div>-->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--<div class="services-block col-md-3 col-sm-6 col-xs-6">-->
+                                <!--<div class="inner-box">-->
+                                    <!--<a href="{:U('Solutionlist/Index',array('cid'=>3))}">-->
+                                        <!--<div class="image">-->
+                                            <!--<img src="__TMPL__Public/assets/images/index/8ChemicalFibers.jpg" alt="">-->
+                                        <!--</div>-->
+                                        <!--<div class="lower-content">-->
+                                            <!--<h3><span>Chemical Fibers Equipment</span></h3>-->
+                                            <!--&lt;!&ndash;<div class="text">Rotor Spinning Process<span class="icon flaticon-right-arrow-1"></span></div>&ndash;&gt;-->
+                                        <!--</div>-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center">
+                <a class="view-all" href="{:U('solutionlist/index',array('cid'=>3))}">View All Sectors <span class="icon flaticon-arrow-pointing-to-right"></span></a>
+            </div>
+        </div>
+    </section>
+    <!--新增气流纺-->
+    <section class="market-section-two" >
+        <div class="auto-container">
+            <div class="title-box">
+                <h2>PRODUCTS SOLUTIONS</h2>
+                <div class="text">Over 67 years experience & knowledge In textile industry, dedicated to provide the best complete product solutions.</div>
+            </div>
+
+            <div class="clearfix">
+                <!--Project Block-->
+                <div class="project-block col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="__TMPL__Public/assets/images/index/1Combing Spinning.jpg" alt="">
+                            <div class="overlay-box">
+                                <div class="content">
+                                    <h3><a href="{:U('Index/detail')}">Cotton Spinning Process</a></h3>
+                                    <div class="text">Combing/Compact Spinning Process <span class="icon flaticon-right-arrow-1"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Project Block-->
+                <div class="project-block col-md-6 col-sm-6 col-xs-12 project-block2">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="__TMPL__Public/assets/images/index/2Carded Spinning.jpg" alt="">
+                            <div class="overlay-box">
+                                <div class="content">
+                                    <h3><a href="{:U('Index/detail')}">Cotton Spinning Process</a></h3>
+                                    <div class="text">Carded Yarn Spinning Process <span class="icon flaticon-right-arrow-1"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Project Block-->
+                <div class="project-block col-md-6 col-sm-6 col-xs-12 project-block3">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="__TMPL__Public/assets/images/index/3Rotor Spinning.JPG" alt="">
+                            <div class="overlay-box">
+                                <div class="content">
+                                    <h3><a href="{:U('Index/detail')}">Cotton Spinning Process</a></h3>
+                                    <div class="text">Rotor Spinning Process<span class="icon flaticon-right-arrow-1"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <section class="services-section services-other" >
+                <div class="auto-container">
+                    <div class="inner-container">
+                        <div class="row clearfix">
+                            <!--Services Block-->
+                            <div class="services-block col-md-3 col-sm-6 col-xs-6">
+                                <div class="inner-box">
+                                    <a href="{:U('Solutionlist/Index',array('cid'=>3))}">
+                                        <div class="image">
+                                            <img src="__TMPL__Public/assets/images/index/4 Weaving.jpg" alt="">
+                                        </div>
+                                        <div class="lower-content">
+                                            <h3><span>Weaving</span></h3>
+                                            <!--<div class="text">Rotor Spinning Process<span class="icon flaticon-right-arrow-1"></span></div>-->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--Services Block-->
+                            <div class="services-block col-md-3 col-sm-6 col-xs-6">
+                                <div class="inner-box">
+                                    <a href="{:U('Solutionlist/Index',array('cid'=>3))}">
+                                        <div class="image">
+                                            <img src="__TMPL__Public/assets/images/index/5Twisting.jpg" alt="">
+                                        </div>
+                                        <div class="lower-content">
+
+                                            <h3><span>Twisting</span></h3>
+                                            <!--<div class="text">Rotor Spinning Process<span class="icon flaticon-right-arrow-1"></span></div>-->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--Services Block-->
+                            <div class="services-block col-md-3 col-sm-6 col-xs-6">
+                                <div class="inner-box">
+                                    <a href="{:U('Solutionlist/Index',array('cid'=>3))}">
+                                        <div class="image">
+                                            <img src="__TMPL__Public/assets/images/index/6Dying.png" alt="">
+                                        </div>
+                                        <div class="lower-content">
+                                            <h3><span>Dying & Finishing</span></h3>
+                                            <!--<div class="text">Rotor Spinning Process<span class="icon flaticon-right-arrow-1"></span></div>-->
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                            <!--Services Block-->
+                            <div class="services-block col-md-3 col-sm-6 col-xs-6">
+                                <div class="inner-box">
+                                    <a href="{:U('Solutionlist/Index',array('cid'=>3))}">
+                                        <div class="image">
+                                            <img src="__TMPL__Public/assets/images/index/7SpareParts.jpg" alt="">
+                                        </div>
+                                        <div class="lower-content">
+
+                                            <h3><span>Spare Parts</span></h3>
+                                            <!--<div class="text">Rotor Spinning Process<span class="icon flaticon-right-arrow-1"></span></div>-->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--<div class="services-block col-md-3 col-sm-6 col-xs-6">-->
+                            <!--<div class="inner-box">-->
+                            <!--<a href="{:U('Solutionlist/Index',array('cid'=>3))}">-->
+                            <!--<div class="image">-->
+                            <!--<img src="__TMPL__Public/assets/images/index/8ChemicalFibers.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="lower-content">-->
+                            <!--<h3><span>Chemical Fibers Equipment</span></h3>-->
+                            <!--&lt;!&ndash;<div class="text">Rotor Spinning Process<span class="icon flaticon-right-arrow-1"></span></div>&ndash;&gt;-->
+                            <!--</div>-->
+                            <!--</a>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center">
+                <a class="view-all" href="{:U('solutionlist/index',array('cid'=>3))}">View All Sectors <span class="icon flaticon-arrow-pointing-to-right"></span></a>
+            </div>
+        </div>
+    </section>
+    <!--End Market Section Two-->
+    <!--Testimonial Section Two-->
+    <section class="testimonial-section-two">
+
+        <div class="auto-container">
+            <div class="title-box">
+                <h2>VR & AR show</h2>
+                <div class="text">Over 67 years experience & knowledge of textile industry, dedicated to provide the best complete product solutions.</div>
+            </div>
+            <div class="row clearfix">
+
+                <!--Testimonial Column-->
+                <div class="testimonial-column col-md-6 col-sm-12 col-xs-12">
+                    <div class="inner-column">
+
+                        <div class="single-item-carousel owl-carousel owl-theme">
+                            <!--Testimonial Block Two-->
+                            <div class="testimonial-block-two">
+                                <div class="inner-box">
+                                    <img src="__TMPL__Public/assets/images/vr/ar.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <!--Testimonial Block Two-->
+                            <div class="testimonial-block-two">
+                                <div class="inner-box">
+                                    <img src="__TMPL__Public/assets/images/vr/vr.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Content Column-->
+                <div class="content-column col-md-6 col-sm-12 col-xs-12 ">
+                    <div class="inner-column">
+                        <div class="sec-title">
+                            <h2>Enjoy Your Tour From Here</h2>
+                            <div class="separator"></div>
+                        </div>
+                        <div class="bold-text">Strength & growth comes only through continuous effort.</div>
+                        <ul class="achived-list">
+                            <li class="vrIcon iconImage">
+                                <img src="__TMPL__Public/assets/images/vr.png" alt="">
+                            </li>
+                            <li class="number"><a href="http://720.co-links.com/tour/bbc81cb3bc1ad5eb">VR Company  Overview</a></li>
+                        </ul>
+                        <ul class="achived-list">
+                            <li class="arIcon iconImage">
+                                <img src="__TMPL__Public/assets/images/ar.png" alt="">
+                            </li>
+                            <li class="number"><a href="http://720.co-links.com/tour/a533622bfdcd659f">AR Product  Overview</a></li>
+                        </ul>
+                        <div class="text">It is a pleasure for our honored customers who browse these websites with a bountiful and visual enjoyment of our company and products.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--#5dca0f-->
+    <!--End Testimonial Section Two-->
+    <!--Call To Action Section Two-->
+    <section class="call-to-action-section-two" style="background-image:url(__TMPL__Public/assets/images/background/77.png)">
+        <div class="auto-container">
+            <h2><a href="http://fjz.ttfj.com/en/index.html">Complete set of equipment manufacturer in global textile industrial chain</a></h2>
+            <a href="http://fjz.ttfj.com/en/index.html" class="theme-btn btn-style-one">Visit Online Exhibition <span class="icon flaticon-arrow-pointing-to-right"></span></a>
+        </div>
+    </section>
+    <!--News Section Two-->
+    <section class="team-section">
+        <div class="auto-container">
+            <div class="sec-title centered">
+                <h2>PROJECT REFERENCES</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="row clearfix">
+
+                <!--Team Block-->
+                <foreach name="rows" item="v">
+                    <div class="team-block col-md-3 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="__ROOT__/data/upload/{$v.img}" alt="{$v.alt}" />
+                                <div class="overlay-box">
+                                    <ul class="social-icon-two">
+                                        <div class="social-share" data-initialized="true" data-image="__ROOT__/data/upload/{$v.img}" data-title="{$v.name|strip_tags|mb_substr=0,18,'utf-8'}...">
+                                            <a href="#" class="social-share-icon icon-facebook"></a>
+                                            <a href="#" class="social-share-icon icon-twitter"></a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lower-content">
+                                <h3><a href="{:u('index/lists',array('id'=>$v['id']))}">{$v.name|strip_tags|mb_substr=0,18,'utf-8'}...</a></h3>
+                                <div class="designation">{$v.honor}</div>
+                                <div class="text">{$v.content|strip_tags|mb_substr=0,35,'utf-8'}...</div>
+                            </div>
+                        </div>
+                    </div>
+                </foreach>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!--<section class="news-section-two">
+        <div class="auto-container">
+            <div class="sec-title centered">
+                <h2>NEWS CENTER</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="row clearfix">
+
+                &lt;!&ndash;News Block Two&ndash;&gt;
+                <div class="news-block-two col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="{:U('news/Index',array('cid'=>9))}"><img src="__TMPL__Public/assets/images/resource/news-1.jpg" alt="" /></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="{:U('news/Index',array('cid'=>9))}">CHTC President Liu Haitao Attend D&Y Group Malaysia Phrase 2 Factory Grand Opening </a></h3>
+                            <div class="title">Post Info</div>
+                            <div class="post-date">By Admin, On 13th August 2017</div>
+                            <div class="text">Malaysia phrase 2 factory set up in the early of 2017, equipped with 116,000 spindles and spinning frames provided by CHTC. Liu Haitao said, CHTC and D&Y Group cooperated....</div>
+                            <a href="{:U('news/Index',array('cid'=>9))}" class="read-more">Read More <span class="icon flaticon-arrow-pointing-to-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                &lt;!&ndash;News Block Two&ndash;&gt;
+                <div class="news-block-two col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="{:U('news/Index',array('cid'=>10))}"><img src="__TMPL__Public/assets/images/resource/news-2.jpg" alt="" /></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="{:U('news/Index',array('cid'=>10))}">
+                                Autocoro 9 Vacuum Trash Cleaner: More Profit From Automating Cleaning</a></h3>
+                            <div class="title">Post Info</div>
+                            <div class="post-date">By Admin, On 05th July 2017</div>
+                            <div class="text">The new Vacuum Trash Cleaner (VTC) from Schlafhorst is an innovative unit for the Autocoro 9. It improves automated cleaning...</div>
+                            <a href="{:U('news/Index',array('cid'=>10))}" class="read-more">Read More <span class="icon flaticon-arrow-pointing-to-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                &lt;!&ndash;News Block Two&ndash;&gt;
+                <div class="news-block-two col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="{:U('news/Index',array('cid'=>11))}"><img src="__TMPL__Public/assets/images/resource/news-3.jpg" alt="" /></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="{:U('news/Index',array('cid'=>11))}">ITMA ASIA +CITME 2018</a></h3>
+                            <div class="title">Post Info</div>
+                            <div class="post-date">By Admin, On 21st October 2017</div>
+                            <div class="text">Since 2008, a combined show known as “ITMA ASIA + CITME” has been held in China, scheduled to take place every two years. Taking off in Shanghai, the milestone event features...</div>
+                            <a href="{:U('news/Index',array('cid'=>11))}" class="read-more">Read More <span class="icon flaticon-arrow-pointing-to-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>-->
+    <tc_include file="Public:footer" />
+    <!--End News Section Two-->
+
+    
+
+</div>
+<!--End pagewrapper-->
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
+
+<script src="__TMPL__Public/assets/js/jquery.js"></script>
+<script src="__TMPL__Public/assets/js/glide.js"></script>
+<!--Revolution Slider-->
+<script src="__TMPL__Public/assets/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="__TMPL__Public/assets/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="__TMPL__Public/assets/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="__TMPL__Public/assets/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="__TMPL__Public/assets/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="__TMPL__Public/assets/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="__TMPL__Public/assets/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="__TMPL__Public/assets/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="__TMPL__Public/assets/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="__TMPL__Public/assets/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="__TMPL__Public/assets/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script src="__TMPL__Public/assets/js/main-slider-script.js"></script>
+<script src="__TMPL__Public/assets/js/bootstrap.min.js"></script>
+<script src="__TMPL__Public/assets/js/jquery.fancybox.js"></script>
+<script src="__TMPL__Public/assets/js/owl.js"></script>
+<script src="__TMPL__Public/assets/js/jquery-ui.js"></script>
+<script src="__TMPL__Public/assets/js/wow.js"></script>
+<script src="__TMPL__Public/assets/js/knob.js"></script>
+<script src="__TMPL__Public/assets/js/appear.js"></script>
+<script src="__TMPL__Public/assets/js/script.js"></script>
+
+<script>
+    var glide = $('.main-slider').glide({
+        //autoplay:true,//是否自动播放 默认值 true如果不需要就设置此值
+        animationTime:500, //动画过度效果，只有当浏览器支持CSS3的时候生效
+        arrows:true, //是否显示左右导航器
+        arrowsWrapperClass: "arrowsWrapper",//滑块箭头导航器外部DIV类名
+        arrowMainClass: "slider-arrow",//滑块箭头公共类名
+        arrowRightClass:"slider-arrow--right",//滑块右箭头类名
+        arrowLeftClass:"slider-arrow--left",//滑块左箭头类名
+        arrowRightText:">",//定义左右导航器文字或者符号也可以是类
+        arrowLeftText:"<",
+        nav:true, //主导航器也就是本例中显示的小方块
+        navCenter:true, //主导航器位置是否居中
+        navClass:"slider-nav",//主导航器外部div类名
+        navItemClass:"slider-nav__item", //本例中小方块的样式
+        navCurrentItemClass:"slider-nav__item--current" //被选中后的样式
+    });
+</script>
+</body>
+</html>

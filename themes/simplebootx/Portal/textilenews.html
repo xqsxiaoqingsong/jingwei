@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> JINGWEI TEXTILE MACHINERY</title>
+<!-- Stylesheets -->
+<link href="__TMPL__Public/assets/css/bootstrap.css" rel="stylesheet">
+<link href="__TMPL__Public/assets/css/style.css" rel="stylesheet">
+<link href="__TMPL__Public/assets/css/responsive.css" rel="stylesheet">
+<!--<link href="css/color.css" rel="stylesheet">-->
+
+<link rel="shortcut icon" href="__TMPL__Public/assets/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="__TMPL__Public/assets/images/favicon.png" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="__TMPL__Public/assets/js/respond.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header-->
+
+    <tc_include file="Public:head" />
+
+
+    
+    <!--Page Title-->
+    <section class="page-title page-banner" style="background-image:url(__ROOT__data/upload/{$banner})">
+    	<div class="auto-container">
+        	<ul class="page-breadcrumb">
+            	<li><a href="index.html">Home</a></li>
+
+            </ul>
+
+        </div>
+    </section>
+    <!--End Page Title-->
+    
+    <!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Content Side-->
+                <div class="content-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                	<!--Blog Single-->
+                	<div class="blog-single">
+
+                            <div class="inner-box">
+                                <div class="image">
+                                    <foreach name="rows['smeta']['photo']" item="v">
+                                    <img src="__ROOT__/data/upload/{$v.url}" alt="{$v.alt}" />
+                                    </foreach>
+                                </div>
+                                <div class="lower-content">
+                                    <h3>{$rows.post_title}</h3>
+                                    <div class="title">Post Info</div>
+                                    <div class="post-date">By {$author}, On <!--21st October 2017--> {$rows.post_date|strtotime|date="jS F Y",###}</div>
+                                    <div class="text">
+                                        {$rows.post_content}
+
+                                        <div class="two-column clearfix">
+                                            <div class="row clearfix">
+                                                <div class="image-column col-md-6 col-sm-6 col-xs-12">
+                                                    <div class="image">
+                                                        <img src="__ROOT__/data/upload/{$rows.news_illustration}" alt=""  style="width:344px; height:211px"/>
+                                                    </div>
+                                                </div>
+                                                <div class="text-column col-md-6 col-sm-6 col-xs-12">
+                                                    {$rows.image_decription}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>{$rows.post_source}</span>
+
+                                        <!--post-share-options-->
+                                        <div class="post-share-options">
+                                            <div class="post-share-inner clearfix">
+                                                <ul class="pull-left info-links clearfix">
+                                                    <li><a href="#"><span class="fa fa-heart"></span></a>18</li>
+                                                    <li><a href="#"><span class="fa fa-comments"></span></a>6</li>
+                                                </ul>
+                                                <div class="pull-right tags"><span>Tags: </span>
+                                                    <foreach name="res['post_keywords']" item="v">
+                                                        <a href="#">{$v}</a>
+                                                    </foreach>
+                                                    <!--<a href="#">idea</a>, <a href="#">services</a>, <a href="#">Growth</a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- Comment Form -->
+
+                    </div>
+                </div>
+                
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                	<aside class="sidebar default-sidebar with-border">
+						
+                        <!-- Search -->
+                        <div class="sidebar-widget search-box">
+                        	<form method="post" onSubmit="return false">
+                                <div class="form-group">
+                                    <input type="text" name="search-field1" value="" placeholder="Enter Your Keyword..." required="">
+                                    <button type="submit"><span class="icon fa fa-search"></span></button>
+                                </div>
+                            </form>
+						</div>
+
+
+                        <!--Blog Category Widget-->
+                        <div class="sidebar-widget sidebar-blog-category">
+                            <div class="sidebar-title style-two">
+                                <h2>Categories</h2>
+                            </div>
+                            <ul class="blog-cat-two">
+                                <li><a href="#">Latest Technology  <span>(6)</span></a></li>
+                                <li><a href="#">Manufacturing <span>(2)</span></a></li>
+                                <li><a href="#">Agriculture <span>(8)</span></a></li>
+                                <li><a href="#">Chemical Industry <span>(5)</span></a></li>
+                                <li><a href="#">Uncategorized <span>(3)</span></a></li>
+                            </ul>
+                        </div>
+                        
+                        <!--Recent Comments-->
+                        <div class="sidebar-widget recent-comments">
+                            <div class="sidebar-title">
+                                <h2>Recent Comments</h2>
+                            </div>
+                            
+                            <div class="comment-block">
+                            	<div class="inner">
+                                	<div class="date">August 17, 2017</div>
+                                    <div class="content">
+                                    	<div class="image"><img src="__TMPL__Public/assets/images/resource/author-15.jpg" alt="" /></div>
+                                        <h3><a href="javascript:;" style="cursor:default">Mark Mitchael</a></h3>
+                                        <div class="text">It is long established fact</div>
+                                        <a href="javascript:;" style="cursor:default" class="reply-btn"><span class="fa fa-mail-forward"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="comment-block">
+                            	<div class="inner">
+                                	<div class="date">July 08, 2017</div>
+                                    <div class="content">
+                                    	<div class="image"><img src="__TMPL__Public/assets/images/resource/author-16.jpg" alt="" /></div>
+                                        <h3><a href="javascript:;" style="cursor:default">Steve Bowerman</a></h3>
+                                        <div class="text">When looking at its layout</div>
+                                        <a href="javascript:;" style="cursor:default" class="reply-btn"><span class="fa fa-mail-forward"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- Popular Posts -->
+                        <div class="sidebar-widget popular-posts">
+                            <div class="sidebar-title style-two"><h2>Popular Posts</h2></div>
+                            <foreach name="res" item="v">
+                                <article class="post">
+                                    <figure class="post-thumb"><img src="__ROOT__/data/upload/{$v.img}" alt=""><a class="overlay" href="javascript:;"></a></figure>
+                                    <div class="text"><a href="{:U('news/news_detail',array('id'=>$v['id']))}">{$v.post_title|strip_tags|mb_substr=0,25,'utf-8'}</a></div>
+                                    <div class="post-info">{$v.post_date}</div>
+                                </article>
+                            </foreach>
+                            <!--<article class="post">
+                            	<figure class="post-thumb"><img src="__TMPL__Public/assets/images/resource/post-thumb-2.jpg" alt=""><a class="overlay" href="blog-single.html"></a></figure>
+                                <div class="text"><a href="blog-single.html">Top reason why should choose our industry.</a></div>
+                                <div class="post-info">February 14, 2017</div>
+                            </article>
+
+                            <article class="post">
+                            	<figure class="post-thumb"><img src="__TMPL__Public/assets/images/resource/post-thumb-3.jpg" alt=""><a class="overlay" href="blog-single.html"></a></figure>
+                                <div class="text"><a href="blog-single.html">We won the best factory award of the year.</a></div>
+                                <div class="post-info">January 16, 2017</div>
+                            </article>-->
+                            
+						</div>
+                        
+                        <!-- Popular Tags -->
+                        <div class="sidebar-widget popular-tags">
+                            <div class="sidebar-title style-two"><h2>Tag Cloud</h2></div>
+                            <a href="javascript:;" style="cursor:default">Idea</a>
+                            <a href="javascript:;" style="cursor:default">Finance</a>
+                            <a href="javascript:;" style="cursor:default">Experts</a>
+                            <a href="javascript:;" style="cursor:default">Tips</a>
+                            <a href="javascript:;" style="cursor:default">Marketing</a>
+                            <a href="javascript:;" style="cursor:default">Services</a>
+                            <a href="javascript:;" style="cursor:default">Growth</a>
+                        </div>
+                        
+                    </aside>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!--Quote Form-->
+    <div class="modal fade" id="schedule-box" tabindex="-1" role="dialog">
+      <div class="modal-dialog popup-container container" role="document">
+        <div class="modal-content">
+            <div class="appoinment_form_wrapper clear_fix">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <div class="get-quote-form" style="background-image:url(__TMPL__Public/assets/images/background/13.jpg)">
+                	<div class="inner-box">
+                    	<!--Sec Title-->
+                        <div class="sec-title">
+                        	<div class="clearfix">
+                            	<div class="pull-left">
+                                	<h2>Get a Quote</h2>
+                                    <div class="separator centered"></div>
+                                </div>
+                                <div class="pull-left">
+                                	<div class="text">Get a free quote for your industrial or engineering business solutions, We are here 24/7.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Quote Form / Style Two-->
+                        <div class="quote-form style-two">
+                            <!--Shipping Form-->
+                            <form method="post" action="contact.html">
+                                <div class="row clearfix">
+                                	<div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="text" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="text" placeholder="Company Name" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="text" placeholder="Phone" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <select class="custom-select-box">
+                                            <option>Select Needed Service</option>
+                                            <option>Services One</option>
+                                            <option>Services Two</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <textarea placeholder="Your Message..."></textarea>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form">Send Now <span class="icon flaticon-arrow-pointing-to-right"></span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> 
+        </div> 
+      </div> 
+      <a href="index.html" class="backhome">Back to Home <span class="icon flaticon-arrow-pointing-to-right"></span></a>
+    </div>
+    <tc_include file="Public:footer" />
+    <!-- End of Quote box -->
+    
+    <!--Main Footer-->
+    <!--<footer class="main-footer">
+        <div class="auto-container">
+            &lt;!&ndash;Widgets Section&ndash;&gt;
+            <div class="widgets-section">
+                <div class="row clearfix">
+
+                    &lt;!&ndash;Column&ndash;&gt;
+                    <div class="column col-md-5 col-sm-6 col-xs-12">
+                        <div class="footer-widget logo-widget">
+                            <div class="logo">
+                                <a href="index.html"><img src="__TMPL__Public/assets/images/logo.png" alt="" /></a>
+                            </div>
+                            <div class="widget-content">
+                                <div class="text">7F, C Block,  First Shanghai Center, No.39 Liangmaqiao Rd, Chaoyang District, Beijing, China</div>
+                                <ul class="list">
+                                    <li>Tel: +8610-84534078/79/80/81  </li>
+                                    <li> Fax: +8610-84534135</li>
+                                </ul>
+                                <div class="timing">
+                                    <span>Visit Our Office:</span>Monday - Satday: 9.00am to 5.00pm
+                                </div>
+                                <ul class="social-icon-one">
+                                    <li><a href="https://www.facebook.com/CHTC.Jennifer/?modal=admin_todo_tour"><span class="fa fa-facebook"></span></a></li>
+                                    <li><a href="https://twitter.com/CHTC_textile"><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href="https://www.linkedin.com/company/13706394/admin/overview/"><span class="fa fa-linkedin"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    &lt;!&ndash;Column&ndash;&gt;
+                    <div class="column col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget links-widget">
+                            <div class="footer-title">
+                                <h2>Useful Links</h2>
+                            </div>
+                            <div class="row clearfix">
+                                <div class="column col-md-6 col-sm-6 col-xs-12">
+                                    <ul class="links">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="news.html">News</a></li>
+                                        <li><a href="solutionlist.html">Solution</a></li>
+                                        <li><a href="investor.html">Investor Relationship</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column col-md-6 col-sm-6 col-xs-12">
+                                    <ul class="links">
+                                        <li><a href="http://www.sinomach.com.cn/en/">SINOMACH </a></li>
+                                        <li><a href="http://www.chtgc.com">CHTC      </a></li>
+                                        <li><a href="http://www.ctmgc.com.cn/">CTMGC    </a></li>
+                                        <li><a href="/">Subsidiary</a></li>
+                                        &lt;!&ndash;<li><a href="http://fjz.ttfj.com/en/index.html">Online Exhibition</a></li>&ndash;&gt;
+                                        &lt;!&ndash;<li><a href="#">App</a></li>&ndash;&gt;
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    &lt;!&ndash;Column&ndash;&gt;
+                    <div class="column col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-widget material-widget">
+                            <div class="footer-title">
+                                <h2>Download Center</h2>
+                            </div>
+                            <ul class="list-style-two">
+                                &lt;!&ndash;<li><span class="icon flaticon-doc"></span><a href="#">Company Investors</a>Year 2017-18</li>&ndash;&gt;
+                                &lt;!&ndash;<li><span class="icon flaticon-doc"></span><a href="#">Industrial Training</a>For Constructors</li>&ndash;&gt;
+                                &lt;!&ndash;<li><span class="icon flaticon-pdf"></span><a href="#">Company Growth</a>In Last 3 Years</li>&ndash;&gt;
+                                <li><a href="#">Product</a></li>
+                                <li><a href="#">Company Report</a></li>
+                                <li><a href="#">Annual Report</a></li>
+                                <li><a href="#">CSR Report</a></li>
+                                <li><a href="#">More</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>-->
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
+
+<script src="__TMPL__Public/assets/js/jquery.js"></script>
+<script src="__TMPL__Public/assets/js/bootstrap.min.js"></script>
+<script src="__TMPL__Public/assets/js/jquery.fancybox.js"></script>
+<script src="__TMPL__Public/assets/js/owl.js"></script>
+<script src="__TMPL__Public/assets/js/wow.js"></script>
+<script src="__TMPL__Public/assets/js/jquery-ui.js"></script>
+<script src="__TMPL__Public/assets/js/knob.js"></script>
+<script src="__TMPL__Public/assets/js/appear.js"></script>
+<script src="__TMPL__Public/assets/js/script.js"></script>
+
+</body>
+</html>
+<script>
+    //搜索框
+    $(".search-box button[type='submit']").click(function(){
+
+        var keywords =$("input[name='search-field1']").val();
+        if(keywords.trim().length==0){
+            alert("请输入您要搜索的关键字");
+        }else{
+            var url = "{:U('Solutionlist/index',array(),false)}"+"&keywords="+keywords;
+            window.location.href= url;
+        }
+
+    })
+
+</script>

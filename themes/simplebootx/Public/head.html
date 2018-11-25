@@ -1,0 +1,254 @@
+<header class="main-header">
+    <!-- Header Top -->
+    <div class="header-top">
+        <div class="auto-container">
+            <div class="top-left">
+                <ul class="links clearfix">
+                    <li><a style="cursor:default">  Stock Code: 000666</a></li>
+                </ul>
+            </div>
+            <div class="top-outer clearfix">
+                <!--Top Right-->
+                <div class="top-right clearfix">
+                    <ul class="clearfix">
+                        <li class="dropdown">
+                            <a href="#" id="dropdownMenu1" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >Subsidiary &nbsp;<span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu1">
+                                <li><a href="http://ycjw.fuz.com.cn">Yichang Jingwei Textile Machinery Co., Ltd</a></li>
+                                <li><a href="http://www.xfz.com.cn/">Wuxi Hongda Texparts Machinery Co., Ltd</a></li>
+                                <li><a href="http://www.wxjwfz.com.cn/">Wuxi Jingwei Textile Technology Set Co., Ltd</a></li>
+                                <li><a href="http://www.cdyaojia.com/">Changde Jingwei Pendulum Arm Technology Co., Ltd</a></li>
+                                <li><a href="http://www.zritc.com/ZRTEN/">Zhongrong International Trust Co., Ltd</a></li>
+                                <li><a href="http://www.fuz.com.cn/">Wuhan Texmate Technology Co., Ltd</a></li>
+                                <li><a href="http://www.jwtsudakoma-xy.com/">Jingwei Tsudakoma Textile Machinery (Xianyang) Co.,Ltd</a></li>
+                                <li><a href="#">Qingdao Hongda Textile Machinery Co., Ltd</a></li>
+                                <li><a href="#">Shenyang Hongda Textile Machinery Co., Ltd</a></li>
+                                <li><a href="#">Tianjin Hongda Textile Machinery Co., Ltd</a></li>
+                                <li><a href="#">Jingwei Textile Machinery Co., Ltd Yuci Branch</a></li>
+                                <li><a href="#">Jingwei Textile Machinery New Technology Co.,Ltd</a></li>
+                                <li><a href="#">Huangshi Jingwei Textile Machinery Co.,Ltd</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://fjz.ttfj.com/en/index.html">Online Exhibition</a></li>
+                        <li>
+                            <a href="#" id="dropdownMenu3" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Careers&nbsp;<span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu3">
+                                <li><a href="solutionlist.html">Textile Machinery Business</a></li>
+                                <li><a href="http://www.zritc.com/ZRTEN/">Financial Trust Business</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="{:U('App/index')}">App</a></li>
+                        <!--Language-->
+                        <li class="language dropdown">
+                            <a class="btn btn-default dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">
+                                <span class="flag-img"><img src="__TMPL__Public/assets/images/icons/flag.jpg" alt="" /></span>English &nbsp;<span class="fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu2">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">中文</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://www.facebook.com/CHTC.Jennifer/?modal=admin_todo_tour"><span class="fa fa-facebook"></span></a></li>
+                        <li><a href="https://twitter.com/CHTC_textile"><span class="fa fa-twitter"></span></a></li>
+                        <li><a href="https://www.linkedin.com/company/13706394/admin/overview/"><span class="fa fa-linkedin"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Top End -->
+    <!-- Main Box -->
+    <div class="main-box">
+        <div class="auto-container">
+            <div class="outer-container clearfix">
+                <!--Logo Box-->
+                <div class="logo-box">
+                    <div class="logo"><a href="{:U('index/index')}"><img src="__TMPL__Public/assets/images/logo/logo.png" alt=""></a></div>
+                    <div class="stockCode">
+
+                    </div>
+                </div>
+
+                <!--Nav Outer-->
+                <div class="nav-outer clearfix">
+
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li rel="index"><a href="{:U('index/index')}">Home</a>
+                                </li>
+                                <li class="" rel="Aboutus"><a href="{:U('aboutus/index')}">About us</a>
+                                </li>
+                                <li class="dropdown" rel="News"><a href="#">News </a>
+                                    <ul>
+                                        <foreach name="news_cate" item="v">
+                                            <li><a href=" {:U('news/Index',array('cid'=>$v['term_id']))}">{$v.name}</a ></li>
+                                        </foreach>
+
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown" rel="Solutionlist">
+                                    <a>Solution </a>
+                                    <ul>
+                                        <foreach name="solution_cate" item="v">
+                                            <li><a href="{:U('Solutionlist/Index',array('cid'=>$v['term_id']))}">{$v.name}</a></li>
+                                        </foreach>
+                                       <!-- <li><a href="{:U('Solutionlist/Index')}">Weaving </a></li>
+                                        <li><a href="{:U('Solutionlist/Index')}">Twisting </a></li>
+                                        <li><a href="{:U('Solutionlist/Index')}">Dyeing&Finishing</a></li>
+                                        <li><a href="{:U('Solutionlist/Index')}">Spare Parts</a></li>
+                                        <li><a href="{:U('Solutionlist/Index')}">Chemical fibers</a></li>-->
+                                    </ul>
+                                </li>
+                                <li rel="Vrshow"><a href="{:U('vrshow/index')}">VR Show </a></li>
+                                <li rel="Relationship"><a href="{:U('Relationship/index')}">Investor Relationship </a></li>
+                                <li rel="Contact"><a href="{:U('Contact/index')}">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+
+
+
+                </div>
+                <!--Nav Outer End-->
+            </div>
+        </div>
+    </div>
+    <div class="header-lower">
+        <div class="auto-container clearfix">
+            <div class="lower-left pull-left">
+
+                <!--Info Box-->
+                <div class="upper-column info-box">
+                    <div class="icon-box"><span class="">
+                            <img src="__TMPL__Public/assets/images/book.png" alt="" width="40">
+                        </span></div>
+                    <ul>
+                        <li><strong>60+ </strong>Years  Experience  </li>
+                    </ul>
+                </div>
+
+                <!--Info Box-->
+                <div class="upper-column info-box">
+                    <div class="icon-box"><span class=""> <img src="__TMPL__Public/assets/images/machine.png" alt="" width="41"></span></div>
+                    <ul>
+                        <li><strong>Global</strong>Textile Solutions Supplier</li>
+                    </ul>
+                </div>
+                <!--Info Box-->
+                <div class="upper-column info-box">
+                    <div class="icon-box"><span class=""> <img src="__TMPL__Public/assets/images/customr.png" alt="" width="42"></span></div>
+                    <ul>
+                        <li><strong>3500+</strong>Prominent Clients  </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="lower-right pull-right">
+                <!-- Search -->
+                <div class="search-box">
+                    <form method="post" onSubmit="return false">
+                        <div class="form-group">
+                            <input type="search" name="search-field" value="" placeholder="Custom Search..." required="">
+                            <button type="submit"><span class="icon fa fa-search"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sticky-header">
+        <div class="auto-container">
+
+            <div class="outer-container clearfix">
+                <!--Logo Box-->
+                <div class="logo-box pull-left">
+                    <div class="logo"><a href="{:U('index/index')}"><img src="__TMPL__Public/assets/images/logo/logo.png" alt=""></a></div>
+                </div>
+                <!--Nav Outer-->
+                <div class="nav-outer clearfix">
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li rel="index"><a href="{:U('index/index')}">Home</a>
+
+                                </li>
+                                <li class="" rel="Aboutus"><a href="{:U('aboutus/index')}">About Us</a>
+                                </li>
+                                <li class="dropdown" rel="News">
+                                    <a>News </a>
+                                    <ul>
+                                        <foreach name="news_cate" item="v">
+                                            <li><a href=" {:U('news/Index',array('cid'=>$v['term_id']))}">{$v.name}</a ></li>
+                                        </foreach>
+                                    </ul>
+                                </li>
+                                <li class="dropdown" rel="Solutionlist">
+                                    <a>Solution </a>
+                                    <ul>
+                                        <foreach name="solution_cate" item="v">
+                                            <li><a href="{:U('Solutionlist/Index',array('cid'=>$v['term_id']))}">{$v.name}</a></li>
+                                        </foreach>
+                                    </ul>
+                                </li>
+                                <li rel="Vrshow"><a href="{:U('vrshow/index')}">VR Show</a></li>
+                                <li rel="Relationship"><a href="{:U('Relationship/index')}">Investor Relationship</a></li>
+                                <li rel="Contact"><a href="{:U('Contact/index')}">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+                </div>
+                <!--Nav Outer End-->
+            </div>
+        </div>
+    </div>
+    <!--End Sticky Header-->
+</header>
+<script src="__TMPL__Public/assets/js/jquery.js"></script>
+<script>
+
+    //头部标签选中样式，获取当前控制器名称
+    var controller="{$Think.CONTROLLER_NAME}";
+
+    $(".navigationli li").removeClass("current");
+        $("li[rel="+controller+"]").addClass("current");
+   // $("li[rel="+controller+"]").attr("class","fsad");
+    //$("li[rel="+controller+"]").removeClass("class");
+
+    //搜索框
+   $(".search-box button[type='submit']").click(function(){
+        var keywords =$("input[name='search-field']").val();
+        if(keywords.trim().length==0){
+             alert("请输入您要搜索的关键字");
+        }else{
+             var url = "{:U('Solutionlist/index',array(),false)}"+"&keywords="+keywords;
+              window.location.href= url;
+        }
+
+   })
+</script>

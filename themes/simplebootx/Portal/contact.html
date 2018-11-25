@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> JINGWEI TEXTILE MACHINERY</title>
+<!-- Stylesheets -->
+<link href="__TMPL__Public/assets/css/bootstrap.css" rel="stylesheet">
+<link href="__TMPL__Public/assets/css/style.css" rel="stylesheet">
+<link href="__TMPL__Public/assets/css/responsive.css" rel="stylesheet">
+    <link href="__TMPL__Public/assets/css/contact.css" rel="stylesheet">
+<!--<link href="css/color.css" rel="stylesheet">-->
+<link rel="shortcut icon" href="__TMPL__Public/assets/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="__TMPL__Public/assets/images/favicon.png" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="__TMPL__Public/assets/js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+<style>
+    .codeArea{
+        width: 150px;
+        height: 150px;
+    }
+    .codeArea img{
+        max-width: 100%;
+        position: fixed;
+        right:10px;
+        top:300px;
+        width: 150px;
+        height: 150px;
+    }
+    .page-wrapper section{
+        z-index: 99;
+    }
+
+    @media screen and(max-width:1344px){
+        .codeArea{
+            display: none;
+        }
+    }
+    @media screen and (max-width:1400px){
+        .codeArea{
+            width: 80px;
+            height: 80px;
+
+        }
+        .codeArea img{
+            max-width: 100%;
+        }
+    }
+</style>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <tc_include file="Public:head" />
+
+    
+    <!--Location Section-->
+    <section class="location-section page-banner" style="background-image:url(__TMPL__Public/assets/images/background/pattern-1.png)">
+    	<div class="auto-container" style="z-index: 3">
+        	<ul class="page-breadcrumb">
+            	<li><a href="index.html">Home</a></li>
+                <li>About Us</li>
+            </ul>
+        	<div class="sec-title centered light">
+            	<h2>Visit Our Location</h2>
+                <a href="javascript:void(0)" id="map"  style="width:1200px;margin:0 auto;height: 500px" data-group="g1" data-magnify="gallery" data-src="__TMPL__Public/assets/images/ditu/ditu.png">
+                    <img src="__TMPL__Public/assets/images/ditu/ditu.png" alt="" id="mapImg">
+                </a>
+
+
+            </div>
+            
+
+        </div>
+    </section>
+
+
+    <section class="contact-section">
+    	<div class="auto-container">
+        	
+            <!--Title Box-->
+            <div class="sec-title">
+            	<div class="clearfix">
+                	<div class="pull-left">
+                    	<h2>Quick Contact</h2>
+                        <div class="separator"></div>
+                    </div>
+                    <div class="text">You have questions? Dont hesitate to contact us, Our support team here to <br> help you by 24*7.</div>
+                </div>
+            </div>
+        
+        	<div class="inner-container">
+            	<div class="clearfix">
+                	
+                    <!--Info Column-->
+                    <div class="info-column col-md-4 col-sm-12 col-xs-12">
+                    	<div class="inner-column">
+                        	<div class="upper-box">
+                            	<ul class="list-style-three">
+                                	<li><span class="icon flaticon-technology-2"></span><strong>Call Us: </strong>+8610-84534078</li>
+                                    <li><span class="icon flaticon-envelope-1"></span><strong>Mail Us: </strong>jennifer@jingweitexmach.com</li>
+                                    <li><span class="icon flaticon-time-1"></span><strong>Office Hrs: </strong>Monday - Friday: 9.00am to 5.00pm</li>
+                                    <li>
+                                        <a href="https://www.facebook.com/CHTC.Jennifer/?modal=admin_todo_tour"><span class="fa fa-facebook"></span></a>
+                                        <a href="https://twitter.com/CHTC_textile"><span class="fa fa-twitter"></span></a>
+                                        <a href="https://www.linkedin.com/company/13706394/admin/overview/"><span class="fa fa-linkedin"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Form Column-->
+                    <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                    	<div class="inner-column">
+                        	
+                            <!-- Contact Form -->
+                            <div class="contact-form">
+                                <!--Default Form-->
+                                <form method="post" action="sendemail.php" id="contact-form">
+                                    <div class="row clearfix">
+                                        <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                            <input type="text" name="username" placeholder="Name" required>
+                                        </div>
+                                        
+                                        <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                            <input type="email" name="email" placeholder="E-Mail" required>
+                                        </div>
+                                        
+                                        <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                            <input type="text" name="phone" placeholder="Phone" required>
+                                        </div>
+                                        
+                                        <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                            <input type="text" name="subject" placeholder="Company" required>
+                                        </div>
+                                        
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                            <textarea name="message" placeholder="Massage"></textarea>
+                                        </div>
+                                        
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                            <button class="theme-btn submit-btn" type="submit" name="submit-form">Submit Now <span class="icon flaticon-right-arrow-1"></span></button>
+                                        </div>
+                                        
+                                    </div>
+                                </form>
+                                    
+                            </div>
+                            <!--End Contact Form -->
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div style="float: right; margin-top: -410px;z-index: 99999" class="codeArea" >
+            <img style="" src="__TMPL__Public/assets/images/erweima.png">
+        </div>
+    </section>
+    
+    <!--Quote Form-->
+    <div class="modal fade" id="schedule-box" tabindex="-1" role="dialog">
+      <div class="modal-dialog popup-container container" role="document">
+        <div class="modal-content">
+            <div class="appoinment_form_wrapper clear_fix">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <div class="get-quote-form" style="background-image:url(__TMPL__Public/assets/images/background/13.jpg)">
+                	<div class="inner-box">
+                    	<!--Sec Title-->
+                        <div class="sec-title">
+                        	<div class="clearfix">
+                            	<div class="pull-left">
+                                	<h2>Get a Quote</h2>
+                                    <div class="separator centered"></div>
+                                </div>
+                                <div class="pull-left">
+                                	<div class="text">Get a free quote for your industrial or engineering business solutions, We are here 24/7.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Quote Form / Style Two-->
+                        <div class="quote-form style-two">
+                            <!--Shipping Form-->
+                            <form method="post" action="contact.html">
+                                <div class="row clearfix">
+                                	<div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="text" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="text" placeholder="Company Name" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="text" placeholder="Phone" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <select class="custom-select-box">
+                                            <option>Select Needed Service</option>
+                                            <option>Services One</option>
+                                            <option>Services Two</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <textarea placeholder="Your Message..."></textarea>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form">Send Now <span class="icon flaticon-arrow-pointing-to-right"></span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> 
+        </div> 
+      </div> 
+      <a href="index.html" class="backhome">Back to Home <span class="icon flaticon-arrow-pointing-to-right"></span></a>
+    </div>
+    <tc_include file="Public:footer" />
+    <!-- End of Quote box -->
+
+
+
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
+
+<script src="__TMPL__Public/assets/js/jquery.js"></script>
+<script src="__TMPL__Public/assets/js/index.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $('[data-magnify]').Magnify({
+            keyboard:true,
+            movable:true,
+            modalSize:[1200,800],
+            beforeOpen:function (obj,data) {
+                 console.log('beforeOpen')
+            },
+            opened:function (obj,data) {
+              console.log('opened')
+            },
+            beforeClose:function (obj,data) {
+            console.log('beforeClose')
+            },
+            closed:function (obj,data) {
+            console.log('closed')
+            },
+            beforeChange:function (obj,data) {
+            console.log('beforeChange')
+            },
+            changed:function (obj,data) {
+            console.log('changed')
+            }
+        });
+
+    })
+</script>
+
+<script src="__TMPL__Public/assets/js/bootstrap.min.js"></script>
+<script src="__TMPL__Public/assets/js/jquery.fancybox.js"></script>
+<script src="__TMPL__Public/assets/js/owl.js"></script>
+<script src="__TMPL__Public/assets/js/wow.js"></script>
+<script src="__TMPL__Public/assets/js/jquery-ui.js"></script>
+<script src="__TMPL__Public/assets/js/validate.js"></script>
+<script src="__TMPL__Public/assets/js/appear.js"></script>
+<script src="__TMPL__Public/assets/js/script.js"></script>
+
+</body>
+</html>
